@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+aside {
+    height: 100vh;
+    background-color: #04475c;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+/* RayQ logo */
+.title-sidebar {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    border: 1px solid red;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img-span{
+    margin: 0;
+    /* position: absolute;
+    left: 2px;
+    top: 3px; */
+}
+/* แยกรูปกับ title */
+.title-sidebar span{
+    margin-left: 10px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    display: flex;
+    justify-content: left;
+    margin: 10px 0px 0px 10px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+aside ul li a {
+    /* ลบเส้นใต้ */
+    text-decoration: none;
+    color: aliceblue;
+    /* border: 1px solid green; */
+    padding: 20px;
+    width: 100%;
+}
+.list-sidebar a:hover{
+    background: gray;
+}
+.list-sidebar a{
+    border-radius: 10px 0 0 10px;
+}
+/* แยก setting ล่างบน*/
+.container-sidebar {
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+
+.setting {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px;
+    color: white;
+    border: 1px solid gray;
+    background: #333;
+    cursor: pointer;
+}

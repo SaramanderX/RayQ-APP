@@ -1,0 +1,11 @@
+
+main{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-row: auto;
+  /* max-width: 1200px; */
+}
+section{
+  margin: 20px;
+}
+
