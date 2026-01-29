@@ -1,0 +1,35 @@
+.cardlist-container {
+    margin: 20px;
+    border: 1px solid rgb(37, 247, 124);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+/* กล่องโชว์จำนวนผู้ป่วยในวัน */
+.cardlist-container .information {
+    display: flex;
+    margin: 0;
+    background-color: var(--component-color);
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+.patient-box {
+    color: var(--text-color);
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    /* gap: 5px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+}
+
+.patient-box p {
+    margin-left: 10px;
+}
+.information p {
+    margin-left: 10px;
+}

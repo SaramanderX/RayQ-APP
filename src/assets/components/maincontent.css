@@ -1,0 +1,11 @@
+.content-container{
+    max-width: 1200px;
+    /* border: 1px solid red; */
+}
+.content-container-header{
+    border: 1px solid red;
+    margin: 20px;
+}
+.cardlist-period{
+    border: 1px solid green;
+}

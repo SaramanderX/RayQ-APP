@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+/* https: //colorhunt.co/palette/09637e0883957ab2b2ebf4f6 */
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+:root {
+  --backgound-color: #09637E;
+  --primary-color: #088395; 
+  --component-color: #7AB2B2;
+  --hover-color : #EBF4F6;
+  --alert-color : #F2AEBB;
+  --text-color: #F4F4F4;
 }
