@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./sidebar.css"
 
 function Sidebar(){
@@ -12,24 +13,24 @@ function Sidebar(){
           </div>
           <ul className="list-sidebar">
             <li>
-              <a href="#" title="Todaylist">
-                รายการวันนี้
-              </a>
+              <Link to="/" title="AppointmentList">
+                รายการนัด
+              </Link>
             </li>
             <li>
-              <a href="#" title="Appointment">
+              <Link to="/calender" title="Appointment">
                 นัดหมายผู้ป่วย
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" title="Recent-Appointment">
+              <Link to="#" title="Recent-Appointment">
                 รายการนัดล่าสุด
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" title="statistic">
+              <Link to="#" title="statistic">
                 สถิติ
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

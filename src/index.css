@@ -13,4 +13,9 @@
   --hover-color : #EBF4F6;
   --alert-color : #F2AEBB;
   --text-color: #F4F4F4;
+  --text-color-second: #061E29;
+}
+body{
+  background-color: var(--backgound-color);
+  height: 100vh;
 }

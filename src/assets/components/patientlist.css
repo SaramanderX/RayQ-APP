@@ -1,35 +1,65 @@
 .cardlist-container {
     margin: 20px;
-    border: 1px solid rgb(37, 247, 124);
+    /* border: 1px solid rgb(37, 247, 124); */
     display: grid;
     grid-template-columns: 1fr;
     gap: 5px;
+    overflow-y: auto;
+    
 }
 /* กล่องโชว์จำนวนผู้ป่วยในวัน */
-.cardlist-container .information {
+.information {
+    position: sticky;
+    top:0;
     display: flex;
     margin: 0;
-    background-color: var(--component-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 10px;
     border-radius: 20px 20px 0px 0px;
 }
 .patient-box {
-    color: var(--text-color);
+    color: var(--text-color-second);
     /* border: 1px solid blue; */
     border-radius: 5px;
-    background-color: var(--primary-color);
+    background-color: var(--component-color);
     /* gap: 5px; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     padding: 5px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 
 }
-
+.detail{
+    /* border: 1px solid red; */
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr); */
+    display: flex;
+    justify-content: space-between;
+}
 .patient-box p {
     margin-left: 10px;
 }
 .information p {
     margin-left: 10px;
+}
+
+/* ทำให้ scrollbar สวย */
+/* --- (แถม) ตกแต่ง Scrollbar ให้สวยงาม (ใช้ได้ใน Chrome/Edge) --- */
+.cardlist-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cardlist-container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.cardlist-container::-webkit-scrollbar-thumb {
+  background: #ccc; 
+  border-radius: 4px;
+}
+
+.cardlist-container::-webkit-scrollbar-thumb:hover {
+  background: #888; 
 }

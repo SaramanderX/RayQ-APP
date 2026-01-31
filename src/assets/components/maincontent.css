@@ -1,11 +1,37 @@
 .content-container{
-    max-width: 1200px;
-    /* border: 1px solid red; */
+    /* border: 3px solid rgb(125, 26, 212); */
+    background-color: var(--hover-color);
+    margin: 20px 0px;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .content-container-header{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 20px;
 }
 .cardlist-period{
-    border: 1px solid green;
+    /* border: 1px solid green; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    background-color: darkgray;
+    border: none;
+}
+.cardlist-period div{
+    margin-left: 10px;
+}
+.cardlist-period input{
+    padding: 5px;
+    font-size: 16px;
+}
+.active-btn{
+    background-color: var(--primary-color);
+    transform: translateY(-2px) scale(1.1);
+    
 }

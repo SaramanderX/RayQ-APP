@@ -4,7 +4,7 @@ aside {
     height: 100vh;
     background-color: var(--backgound-color);
     font-family: "Noto Sans Thai", sans-serif;
-    width: 200px;
+    width: 250px;
     position: sticky;
     top:0;
     left: 0;
@@ -66,7 +66,7 @@ aside ul li a {
 }
 /* แยก setting ล่างบน*/
 .container-sidebar {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;

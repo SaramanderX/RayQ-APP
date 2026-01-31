@@ -2,9 +2,16 @@
 main{
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-row: auto;
-  max-width: 1200px;
-  justify-content: center;
+  /* grid-row: auto; */
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  /* 0: หมายถึง Margin บน-ล่าง เป็น 0
+    auto: หมายถึง Margin ซ้าย-ขวา ให้เบราว์เซอร์แบ่งพื้นที่ว่างที่เหลือให้เท่ากันอัตโนมัติ */
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  /* box-shadow: [แนวนอน] [แนวตั้ง] [ความฟุ้ง] [ขนาดเงา] [สี]; */
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.2);
   
 }
 button{
