@@ -1,48 +1,52 @@
 .cardlist-container {
-    margin: 20px;
-    /* border: 1px solid rgb(37, 247, 124); */
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5px;
-    overflow-y: auto;
-    
-}
-/* กล่องโชว์จำนวนผู้ป่วยในวัน */
-.information {
-    position: sticky;
-    top:0;
-    display: flex;
-    margin: 0;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    padding: 10px;
-    border-radius: 20px 20px 0px 0px;
-}
-.patient-box {
-    color: var(--text-color-second);
-    /* border: 1px solid blue; */
-    border-radius: 5px;
-    background-color: var(--component-color);
-    /* gap: 5px; */
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
+  margin: 20px;
+  /* border: 1px solid rgb(37, 247, 124); */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  overflow-y: auto;
 
 }
-.detail{
-    /* border: 1px solid red; */
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr); */
-    display: flex;
-    justify-content: space-between;
+
+/* กล่องโชว์จำนวนผู้ป่วยในวัน */
+.information {
+  position: sticky;
+  top: 0;
+  display: flex;
+  margin: 0;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 20px 20px 0px 0px;
 }
+
+.patient-box {
+  color: var(--text-color-second);
+  border-left: 5px solid #F96E2A;
+  border-radius: 5px;
+  background-color: var(--component-color);
+  /* gap: 5px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+}
+
+
+.detail {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 320px 320px 1fr;
+}
+
 .patient-box p {
-    margin-left: 10px;
+  margin-left: 10px;
 }
+
 .information p {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 /* ทำให้ scrollbar สวย */
@@ -52,14 +56,52 @@
 }
 
 .cardlist-container::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 .cardlist-container::-webkit-scrollbar-thumb {
-  background: #ccc; 
+  background: #ccc;
   border-radius: 4px;
 }
 
 .cardlist-container::-webkit-scrollbar-thumb:hover {
-  background: #888; 
+  background: #888;
+}
+
+.patient-action {
+  display: inline-block;
+  border: 1px solid green;
+
+}
+
+.icon-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  width: 30px;
+  /* กำหนดความกว้าง */
+  height: 30px;
+  /* กำหนดความสูงเท่ากัน */
+  padding: 0;
+  /* ลบ padding ที่อาจทำให้ปุ่มบวม */
+  margin: 0;
+  /* ลบ margin ที่อาจดันบรรทัด */
+  border-radius: 50%;
+  color: var(--primary-color);
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+
+/* 1. เมื่อกล่องมีสถานะ completed ให้เปลี่ยนพื้นหลังเป็นสีเขียวอ่อน */
+.patient-box.completed {
+    background-color: #9DDE8B; /* เขียวพาสเทล */
+    border-left: 5px solid #10b981; /* ขอบเขียว */
+}
+
+/* 2. เมื่อเสร็จแล้ว ให้ปุ่มติ๊กถูก (icon-btn complete) เปลี่ยนสีค้างไว้เลย */
+.patient-box.completed .icon-btn.complete {
+    color: #3E7B27;
 }

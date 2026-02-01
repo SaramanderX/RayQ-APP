@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./sidebar.css"
 
 function Sidebar(){
@@ -13,24 +13,25 @@ function Sidebar(){
           </div>
           <ul className="list-sidebar">
             <li>
-              <Link to="/" title="AppointmentList">
+              {/* ความพิเศษของ NavLink คือ "มันรู้ตัวว่าตัวเองถูกเลือกอยู่หรือไม่" */}
+              <NavLink to="/main" end title="AppointmentList" className={"menu-item"}>
                 รายการนัด
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/calender" title="Appointment">
+              <NavLink to="/calendar" end title="Appointment" className={"menu-item"}>
                 นัดหมายผู้ป่วย
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="#" title="Recent-Appointment">
+              <NavLink to="/recent" end title="Recent-Appointment" className={"menu-item"}>
                 รายการนัดล่าสุด
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="#" title="statistic">
+              <NavLink to="/statistic" end title="statistic" className={"menu-item"}>
                 สถิติ
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>

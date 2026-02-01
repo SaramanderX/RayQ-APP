@@ -15,7 +15,7 @@ function App() {
       <div className="main-content-area" >
         <Routes>
           {/* ถ้า path เป็น / ให้แสดงหน้ารายชื่อ */}
-          <Route path="/" element={<Maincontent />} />
+          <Route path="/main" element={<Maincontent />} />
 
           {/* ถ้า path เป็น /calendar ให้แสดงหน้าปฏิทิน */}
           <Route path="/calendar" element={<CalendarPage />} />
